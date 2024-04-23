@@ -41,7 +41,7 @@ You can use [stairs] to go back livingroom.
                         if (str.ToLower() == "y")
                         {
                             Console.WriteLine("You heard someone calling you from far away...");
-                            Game.reduceSan(rd.Next(6,6));
+                            Game.reduceSan(rd.Next(6,10));
                             //Console.WriteLine(Game.checkSan());
                             isPaintChecked = true;
                             sancheck++;

@@ -43,7 +43,8 @@ namespace NarrativeProject
                 }
                 else if (choice == "stats")
                 {
-                    Console.WriteLine("HP: " + game.checkPlayerHealth());
+                    Console.WriteLine("HP: " + game.checkPlayerHealth()); 
+                    Console.WriteLine("Sanity: " + game.checkPlayerSan());
                 }
                 else game.ReceiveChoice(choice);
             }

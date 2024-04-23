@@ -21,7 +21,7 @@ There is a safe beside your bed locked with code [????].
             {
                 Console.WriteLine("You find a Glock 26 inside the safe.");
                 Game.addItem(new Glock26());
-                if (Game.dropChance() >= 5)
+                if (Game.dropChance() >= 0)
                 {
                     Console.WriteLine("You find a Health Potion inside the safe."); 
                     Game.addItem(new HealthPotion());
@@ -62,7 +62,7 @@ There is a safe beside your bed locked with code [????].
                 /*case "1":
                     Console.WriteLine("Basement.");
                     Game.Transition<Basement>();*/
-                    break;
+                    //break;
                 default:
                     Console.WriteLine("Invalid command.");
                     break;

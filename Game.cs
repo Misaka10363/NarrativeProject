@@ -19,7 +19,7 @@ namespace NarrativeProject
         {
             codeArr[0] = rd.Next(0, 10).ToString()+ rd.Next(0, 10).ToString()+ rd.Next(0, 10).ToString()+ rd.Next(0, 10).ToString();
             codeArr[1] = rd.Next(0, 10).ToString() + rd.Next(0, 10).ToString() + rd.Next(0, 10).ToString() + rd.Next(0, 10).ToString();
-            Console.WriteLine(codeArr[0] + " " + codeArr[1]);
+            Console.WriteLine(codeArr[0] + " " + codeArr[1]);  //debug
         }
         internal static int dropChance() => rd.Next(0, 10);
 
@@ -94,7 +94,7 @@ namespace NarrativeProject
             if (int.Parse(player1.checkHealth()) <= 0) Finish();
         }
 
-        internal static int checkSan() => player1.checkSan();
+        internal int checkPlayerSan() => player1.checkSan();
 
         internal static void reduceSan(int i)
         {
